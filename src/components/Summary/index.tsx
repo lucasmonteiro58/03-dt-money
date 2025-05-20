@@ -20,7 +20,7 @@ export function Summary() {
           <span>Saídas</span>
           <ArrowCircleDown size={32} color="#F75A68" />
         </header>
-        <strong>{priceFormatter.format(-summary.outcome)}</strong>
+        <strong>{priceFormatter.format(summary.outcome)}</strong>
       </SummaryCard>
       <SummaryCard $variant="green">
         <header>
