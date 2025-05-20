@@ -47,6 +47,14 @@
       "type": "outcome",
       "createdAt": "2022-07-30T13:38:57.560Z",
       "id": 6
+    },
+    {
+      "description": "Cotonete",
+      "price": 2,
+      "category": "Higiene",
+      "type": "outcome",
+      "createdAt": "2025-05-20T18:41:24.101Z",
+      "id": 7
     }
   ]
 }
