@@ -35,6 +35,11 @@ export function NewTransactionModal() {
     },
   });
 
+  async function handleCreateNewTransaction(data: NewTransactionFormInputs) {
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+    console.log(data);
+  }
+
   return (
     <Dialog.Portal>
       <Overlay />
@@ -46,7 +51,7 @@ export function NewTransactionModal() {
           <X size={24} />
         </CloseButton>
 
-        <form onSubmit={handleSubmit(() => {})}>
+        <form onSubmit={handleSubmit(handleCreateNewTransaction)}>
           <input
             type="text"
             placeholder="Descrição"
